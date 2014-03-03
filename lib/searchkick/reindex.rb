@@ -183,32 +183,32 @@ module Searchkick
                 output_unigrams: false,
                 output_unigrams_if_no_shingles: true
               },
-              searchkick_suggest_shingle: {
-                type: "shingle",
-                max_shingle_size: 5
-              },
-              searchkick_edge_ngram: {
-                type: "edgeNGram",
-                min_gram: 1,
-                max_gram: 50
-              },
-              searchkick_ngram: {
-                type: "nGram",
-                min_gram: 1,
-                max_gram: 50
-              },
+              # searchkick_suggest_shingle: {
+              #   type: "shingle",
+              #   max_shingle_size: 5
+              # },
+              # searchkick_edge_ngram: {
+              #   type: "edgeNGram",
+              #   min_gram: 1,
+              #   max_gram: 50
+              # },
+              # searchkick_ngram: {
+              #   type: "nGram",
+              #   min_gram: 1,
+              #   max_gram: 50
+              # },
               searchkick_stemmer: {
                 type: "snowball",
                 language: options[:language] || "English"
               }
-            },
-            tokenizer: {
-              searchkick_autocomplete_ngram: {
-                type: "edgeNGram",
-                min_gram: 1,
-                max_gram: 50
-              }
             }
+            # tokenizer: {
+            #   searchkick_autocomplete_ngram: {
+            #     type: "edgeNGram",
+            #     min_gram: 1,
+            #     max_gram: 50
+            #   }
+            # }
           }
         }
 
