@@ -115,61 +115,61 @@ module Searchkick
                 filter: ["standard", "lowercase", "asciifolding", "searchkick_stemmer"]
               },
               # https://github.com/leschenko/elasticsearch_autocomplete/blob/master/lib/elasticsearch_autocomplete/analyzers.rb
-              searchkick_autocomplete_index: {
-                type: "custom",
-                tokenizer: "searchkick_autocomplete_ngram",
-                filter: ["lowercase", "asciifolding"]
-              },
-              searchkick_autocomplete_search: {
-                type: "custom",
-                tokenizer: "keyword",
-                filter: ["lowercase", "asciifolding"]
-              },
+              # searchkick_autocomplete_index: {
+              #   type: "custom",
+              #   tokenizer: "searchkick_autocomplete_ngram",
+              #   filter: ["lowercase", "asciifolding"]
+              # },
+              # searchkick_autocomplete_search: {
+              #   type: "custom",
+              #   tokenizer: "keyword",
+              #   filter: ["lowercase", "asciifolding"]
+              # },
               searchkick_word_search: {
                 type: "custom",
                 tokenizer: "standard",
                 filter: ["lowercase", "asciifolding"]
-              },
-              searchkick_suggest_index: {
-                type: "custom",
-                tokenizer: "standard",
-                filter: ["lowercase", "asciifolding", "searchkick_suggest_shingle"]
-              },
-              searchkick_suggest_index: {
-                type: "custom",
-                tokenizer: "standard",
-                filter: ["lowercase", "asciifolding", "searchkick_suggest_shingle"]
-              },
-              searchkick_text_start_index: {
-                type: "custom",
-                tokenizer: "keyword",
-                filter: ["lowercase", "asciifolding", "searchkick_edge_ngram"]
-              },
-              searchkick_text_middle_index: {
-                type: "custom",
-                tokenizer: "keyword",
-                filter: ["lowercase", "asciifolding", "searchkick_ngram"]
-              },
-              searchkick_text_end_index: {
-                type: "custom",
-                tokenizer: "keyword",
-                filter: ["lowercase", "asciifolding", "reverse", "searchkick_edge_ngram", "reverse"]
-              },
-              searchkick_word_start_index: {
-                type: "custom",
-                tokenizer: "standard",
-                filter: ["lowercase", "asciifolding", "searchkick_edge_ngram"]
-              },
-              searchkick_word_middle_index: {
-                type: "custom",
-                tokenizer: "standard",
-                filter: ["lowercase", "asciifolding", "searchkick_ngram"]
-              },
-              searchkick_word_end_index: {
-                type: "custom",
-                tokenizer: "standard",
-                filter: ["lowercase", "asciifolding", "reverse", "searchkick_edge_ngram", "reverse"]
               }
+              # searchkick_suggest_index: {
+              #   type: "custom",
+              #   tokenizer: "standard",
+              #   filter: ["lowercase", "asciifolding", "searchkick_suggest_shingle"]
+              # },
+              # searchkick_suggest_index: {
+              #   type: "custom",
+              #   tokenizer: "standard",
+              #   filter: ["lowercase", "asciifolding", "searchkick_suggest_shingle"]
+              # },
+              # searchkick_text_start_index: {
+              #   type: "custom",
+              #   tokenizer: "keyword",
+              #   filter: ["lowercase", "asciifolding", "searchkick_edge_ngram"]
+              # },
+              # searchkick_text_middle_index: {
+              #   type: "custom",
+              #   tokenizer: "keyword",
+              #   filter: ["lowercase", "asciifolding", "searchkick_ngram"]
+              # },
+              # searchkick_text_end_index: {
+              #   type: "custom",
+              #   tokenizer: "keyword",
+              #   filter: ["lowercase", "asciifolding", "reverse", "searchkick_edge_ngram", "reverse"]
+              # },
+              # searchkick_word_start_index: {
+              #   type: "custom",
+              #   tokenizer: "standard",
+              #   filter: ["lowercase", "asciifolding", "searchkick_edge_ngram"]
+              # },
+              # searchkick_word_middle_index: {
+              #   type: "custom",
+              #   tokenizer: "standard",
+              #   filter: ["lowercase", "asciifolding", "searchkick_ngram"]
+              # },
+              # searchkick_word_end_index: {
+              #   type: "custom",
+              #   tokenizer: "standard",
+              #   filter: ["lowercase", "asciifolding", "reverse", "searchkick_edge_ngram", "reverse"]
+              # }
             },
             filter: {
               searchkick_index_shingle: {
